@@ -12,7 +12,7 @@
 编辑器/商店客户端直接拉取：
 
 ```
-https://raw.githubusercontent.com/LeeRolling/wovenframe-registry/main/templates.json
+https://raw.githubusercontent.com/wovenframe/wovenframe-registry/main/templates.json
 ```
 
 并使用 ETag / `If-None-Match` 缓存（默认 1 小时），失败时回退本地缓存。字段定义见 [`schema/templates.schema.json`](schema/templates.schema.json)。
@@ -35,7 +35,7 @@ https://raw.githubusercontent.com/LeeRolling/wovenframe-registry/main/templates.
 
 | 字段 | 必填 | 说明 |
 |---|---|---|
-| `id` | ✓ | 小写唯一 id，如 `leerolling.origami-sunrise` |
+| `id` | ✓ | 小写唯一 id，如 `yourname.my-template` |
 | `name` | ✓ | 显示名 |
 | `description` | ✓ | 一句话介绍（≤280 字） |
 | `author.name` / `author.url` | ✓ / — | 作者名与主页 |
